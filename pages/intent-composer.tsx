@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 type IntentType = "swap" | "transfer" | "stake" | "provide_liquidity" | "mint_nft";
 type ChainType = "Ethereum" | "BSC" | "Polygon";
@@ -74,7 +75,6 @@ export default function IntentComposer() {
 
     const runSteps = () => {
       if (i >= plan.length) return;
-      // ZK simülasyonu için %50 gizli adımlar
       const isZKStep = plan[i].includes("(🔒 ZK)");
       setDisplayedPlan((prev) => [...prev, { step: plan[i], status: isZKStep ? "zk" : "pending" }]);
       setTimeout(() => {
@@ -95,7 +95,7 @@ export default function IntentComposer() {
   return (
     <div className={`composer-container max-w-xl mx-auto p-6 rounded-xl shadow-lg mt-10 ${chainThemes[chain]}`}>
       <div className="flex justify-center mb-6">
-        <img src="/anoma-logo.png" alt="Anoma Logo" className="w-16 h-16 mr-2" />
+        <Image src="/anoma-logo.png" alt="Anoma Logo" width={64} height={64} className="mr-2" />
         <h1 className="text-3xl font-bold text-center text-gray-800">Anoma Intent Composer</h1>
       </div>
 
