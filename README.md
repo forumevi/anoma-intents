@@ -12,7 +12,7 @@ This project demonstrates a multi-chain, privacy-focused ecosystem using the **A
 
 The **Intent Composer** showcases zero-knowledge (ZK) inspired privacy steps for each operation.
 
-Demo: [https://anoma-intents-app.onrender.com/intent-composer](https://anoma-intents-app.onrender.com/intent-composer)
+Demo: [https://anoma-intents.onrender.com/intent-composer](https://anoma-intents.onrender.com/intent-composer)
 
 ## Features
 
@@ -26,5 +26,6 @@ Demo: [https://anoma-intents-app.onrender.com/intent-composer](https://anoma-int
 ```bash
 pnpm install
 pnpm dev
+
 
 
