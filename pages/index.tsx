@@ -1,10 +1,11 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Home() {
   return (
     <div className="container mx-auto p-6">
       <header className="flex items-center justify-between mb-8">
-        <img src="/logo.png" alt="Anoma Logo" className="h-12"/>
+        <Image src="/logo.png" alt="Anoma Logo" width={100} height={48} />
         <h1 className="text-3xl font-bold">Anoma Multi-Chain Demo</h1>
       </header>
 
@@ -22,5 +23,3 @@ export default function Home() {
     </div>
   );
 }
-
-
